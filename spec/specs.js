@@ -1,13 +1,10 @@
-describe('leapYear', function() {
-  it("is false for a year that is not divisible by 4", function() {
-    expect(leapYear(1999)).to.equal(false);
+describe('encrypt', function() {
+  it("returns string with spaces removed", function() {
+    expect(encrypt("a b")).to.equal("ab");
   });
 
-  it("is true for most years divisible by 4", function() {
-    expect(leapYear(2012)).to.equal(true);
-  })
+  it("if string = 4 characters return 2 groups of 2", function() {
+    expect(encrypt("abcd")).to.equal("ac bd");
+  });
 
-  it("is false for most years divisible by 100", function() {
-    expect(leapYear(1900)).to.equal(false);
-  })
 });
