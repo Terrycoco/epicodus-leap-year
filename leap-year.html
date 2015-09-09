@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" media="screen" type="text/css" charset="utf-8">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Leap year detector</title>
+  </head>
+  <body>
+  <div id="container">
+    <h1>Leap Year Detector</h1>
+    <form id="leap-year" action="index.html" method="post">
+      <div class="form-group" id="name">
+        <label for="year">Enter a year to see if it's a leap year:</label>
+        <input type="text" id="year" value="">
+      </div>
+      <button class="btn" type="submit" name="button">Find out</button>
+    </form>
+
+    <div id="result">
+      <br> <br>
+      <p><span class="year"></span> is <span class="not"></span>a leap year.</p>
+
+    </div>
+  </div>
+  </body>
+</html>
